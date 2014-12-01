@@ -1,2 +1,358 @@
 @import "compass/reset";
 @import "compass/css3";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background: #f2eee8;
+}
+
+header {
+  height: 60px;
+  background: #fffbf5;
+}
+
+.create_new_post {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  float: left;
+  background: #80a8cc;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.icon-quill {
+  position: relative;
+  top: 12px;
+  color: #ffffff;
+}
+
+.split {
+  float: left;
+  height: 60px;
+  background: #f2eee8;
+  width: 1px;
+  position: relative;
+  left: 20px;
+}
+
+.notification, .mail, .tag {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  float: left;
+  border: 1px solid #f2eee8;
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+.mail {
+  left: 40px;
+}
+
+.tag {
+  left: 50px;
+}
+
+.icon-bell, .icon-envelope, .icon-tag, .icon-twitter, .icon-search {
+  position: relative;
+  top: 12px;
+}
+
+.search {
+  width: 200px;
+  height: 38px;
+  border: 2px solid #f2eee8;
+  border-radius: 25px;
+  float: left;
+  position: relative;
+  top: 10px;
+  left: 950px;
+}
+
+.search p {
+  position: relative;
+  top: -10px;
+  left: -60px;
+  color: #f2eee8;
+}
+
+.icon-search {
+  top: -45px;
+  left: 80px;
+}
+
+.setting {
+  float: right;
+  position: relative;
+  top: 5px;
+  left: -10px;
+}
+
+.icon-twitter {
+  position: relative;
+  top: 15px;
+  left: -120px;
+  align-content: middle;
+  font-size: 30px;
+  color: #80a8cc;
+}
+
+section.personal_information {
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 1000px;
+  background: #80a8cc;
+  display: inline-block;
+  color: #fffbf5;
+  font-weight:lighter;
+  font-size: 12px;
+}
+
+section.personal_information p.name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+section.personal_information .introduction {
+  padding: 20px;
+}
+
+section.personal_information .follow {
+  margin: 30px auto;
+  align-content: center;
+  background: #6c94b8;
+  width: 42%;
+  height: 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+section.personal_information .photo_preview {
+  margin: 40px 0 20px 0;
+}
+
+section.personal_information .activities {
+  padding: 20px;
+  text-align: left;
+}
+
+section.personal_information .activities i {
+  color: #6c94b8;
+}
+section.personal_information .activities span.function {
+  color: #6c94b8;
+}
+
+section.personal_information .activities span.name {
+  text-decoration: underline;
+}
+
+section.posts {
+  position: relative;
+  float: left;
+  width: 60%;
+  height: 1000px;
+  display: inline-block;
+  overflow-y: auto;
+  background: #f2eee8;
+}
+
+div.count {
+  background: #fffbf5;
+  margin: 4%;
+  height: 65px;
+  align-content: center;
+}
+
+.articles {
+  margin: 0 4% 0 4%;
+}
+
+li.tweets, li.photos_videos, li.following, li.followers {
+  position: relative;
+  float: left;
+  width: 25%;
+  display: table;
+  margin-top: 10px;
+}
+
+section.posts .post_detail {
+  padding: 10px 0 0 0;
+}
+
+
+section.posts .post_detail .header, section.posts .post_detail .post, section.posts .post_detail .footer {
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+
+section.posts .post_detail .header, section.posts .post_detail .footer{
+  color: #c6c1b0;
+}
+
+section.posts .post_detail .header .name {
+  font-weight: bold;
+  color: #000000;
+}
+section.posts .post_detail .header i {
+  color: #acd373;
+}
+section.recommend {
+  position: relative;
+  width: 20%;
+  height: 1000px;
+  background: #fffbf5;
+  display: inline-block;
+  text-align: left;
+}
+
+img.avator, .setting {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+}
+
+img.preview {
+  width: 33.3333%;
+  height: width;
+  margin: 0;
+}
+
+#main_avator {
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  position: relative;
+  top: 60px;
+}
+
+#main_avator_field {
+  height: 160px;
+}
+
+img.post {
+  width: 80%;
+  height: 80%;
+}
+
+li {
+  width: 100%;
+  margin-bottom: -7px;
+  vertical-align: center;
+  display: table;
+  word-spacing: 0;
+  letter-spacing: 0;
+}
+
+ul.count {
+  height: 80px;
+  display: inline;
+}
+
+.count li {
+  display: inline;
+}
+
+article {
+  background: #fffbf5;
+  margin-top: 2px;
+}
+
+article .pic {
+  position: absolute;
+  width: 50px;
+}
+
+article img.avator {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+article .header {
+  text-align: right;
+}
+
+article .post_detail {
+  margin-left: 60px;
+  width: 85%;
+  display: inline-block;
+  text-align: left;
+}
+
+img.post {
+  width: 100%;
+}
+
+.header .icon-loop, .header .name {
+  float: left;
+  display: inline-block;
+}
+
+.origin {
+  float: left;
+  display: inline-block;
+}
+
+article .time {
+  display: inline-block;
+}
+
+article .footer {
+  text-align: right;
+}
+
+.footer .icon-redo, .icon-star3, .icon-loop, .loop-count, .more {
+  float: left;
+  display: inline-block;
+}
+
+section.recommend .philippines_trends, .who_to_follow {
+  font-weight: lighter;
+  padding: 20px;
+}
+
+section.recommend .philippines_trends {
+  color: #80a8cc;
+}
+
+section.recommend .title {
+  color: #000000;
+}
+section.recommend section {
+  margin-bottom: 20px;
+}
+section.recommend section img.avator {
+  position: relative;
+  float: left;
+}
+
+section.recommend .follow_detail {
+  position: relative;
+  display: block;
+  width: 80%;
+}
+
+section.recommend section .follow {
+  position: relative;
+  float: right;
+}
+
+.who_to_follow .more {
+  float: right;
+  color: #6c94b8;
+}
+
+.who_to_follow .role {
+  color: #c6c1b0;
+}

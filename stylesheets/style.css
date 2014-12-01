@@ -1,4 +1,4 @@
-/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,465 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 4, ../sass/style.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background: #f2eee8;
+}
+
+/* line 12, ../sass/style.scss */
+header {
+  height: 60px;
+  background: #fffbf5;
+}
+
+/* line 17, ../sass/style.scss */
+.create_new_post {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  float: left;
+  background: #80a8cc;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+/* line 28, ../sass/style.scss */
+.icon-quill {
+  position: relative;
+  top: 12px;
+  color: #ffffff;
+}
+
+/* line 34, ../sass/style.scss */
+.split {
+  float: left;
+  height: 60px;
+  background: #f2eee8;
+  width: 1px;
+  position: relative;
+  left: 20px;
+}
+
+/* line 43, ../sass/style.scss */
+.notification, .mail, .tag {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  float: left;
+  border: 1px solid #f2eee8;
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+/* line 54, ../sass/style.scss */
+.mail {
+  left: 40px;
+}
+
+/* line 58, ../sass/style.scss */
+.tag {
+  left: 50px;
+}
+
+/* line 62, ../sass/style.scss */
+.icon-bell, .icon-envelope, .icon-tag, .icon-twitter, .icon-search {
+  position: relative;
+  top: 12px;
+}
+
+/* line 67, ../sass/style.scss */
+.search {
+  width: 200px;
+  height: 38px;
+  border: 2px solid #f2eee8;
+  border-radius: 25px;
+  float: left;
+  position: relative;
+  top: 10px;
+  left: 950px;
+}
+
+/* line 78, ../sass/style.scss */
+.search p {
+  position: relative;
+  top: -10px;
+  left: -60px;
+  color: #f2eee8;
+}
+
+/* line 85, ../sass/style.scss */
+.icon-search {
+  top: -45px;
+  left: 80px;
+}
+
+/* line 90, ../sass/style.scss */
+.setting {
+  float: right;
+  position: relative;
+  top: 5px;
+  left: -10px;
+}
+
+/* line 97, ../sass/style.scss */
+.icon-twitter {
+  position: relative;
+  top: 15px;
+  left: -120px;
+  align-content: middle;
+  font-size: 30px;
+  color: #80a8cc;
+}
+
+/* line 106, ../sass/style.scss */
+section.personal_information {
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 1000px;
+  background: #80a8cc;
+  display: inline-block;
+  color: #fffbf5;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+/* line 118, ../sass/style.scss */
+section.personal_information p.name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* line 123, ../sass/style.scss */
+section.personal_information .introduction {
+  padding: 20px;
+}
+
+/* line 127, ../sass/style.scss */
+section.personal_information .follow {
+  margin: 30px auto;
+  align-content: center;
+  background: #6c94b8;
+  width: 42%;
+  height: 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+/* line 138, ../sass/style.scss */
+section.personal_information .photo_preview {
+  margin: 40px 0 20px 0;
+}
+
+/* line 142, ../sass/style.scss */
+section.personal_information .activities {
+  padding: 20px;
+  text-align: left;
+}
+
+/* line 147, ../sass/style.scss */
+section.personal_information .activities i {
+  color: #6c94b8;
+}
+
+/* line 150, ../sass/style.scss */
+section.personal_information .activities span.function {
+  color: #6c94b8;
+}
+
+/* line 154, ../sass/style.scss */
+section.personal_information .activities span.name {
+  text-decoration: underline;
+}
+
+/* line 158, ../sass/style.scss */
+section.posts {
+  position: relative;
+  float: left;
+  width: 60%;
+  height: 1000px;
+  display: inline-block;
+  overflow-y: auto;
+  background: #f2eee8;
+}
+
+/* line 168, ../sass/style.scss */
+div.count {
+  background: #fffbf5;
+  margin: 4%;
+  height: 65px;
+  align-content: center;
+}
+
+/* line 175, ../sass/style.scss */
+.articles {
+  margin: 0 4% 0 4%;
+}
+
+/* line 179, ../sass/style.scss */
+li.tweets, li.photos_videos, li.following, li.followers {
+  position: relative;
+  float: left;
+  width: 25%;
+  display: table;
+  margin-top: 10px;
+}
+
+/* line 187, ../sass/style.scss */
+section.posts .post_detail {
+  padding: 10px 0 0 0;
+}
+
+/* line 192, ../sass/style.scss */
+section.posts .post_detail .header, section.posts .post_detail .post, section.posts .post_detail .footer {
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+/* line 199, ../sass/style.scss */
+section.posts .post_detail .header, section.posts .post_detail .footer {
+  color: #c6c1b0;
+}
+
+/* line 203, ../sass/style.scss */
+section.posts .post_detail .header .name {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* line 207, ../sass/style.scss */
+section.posts .post_detail .header i {
+  color: #acd373;
+}
+
+/* line 210, ../sass/style.scss */
+section.recommend {
+  position: relative;
+  width: 20%;
+  height: 1000px;
+  background: #fffbf5;
+  display: inline-block;
+  text-align: left;
+}
+
+/* line 219, ../sass/style.scss */
+img.avator, .setting {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+}
+
+/* line 225, ../sass/style.scss */
+img.preview {
+  width: 33.3333%;
+  height: width;
+  margin: 0;
+}
+
+/* line 231, ../sass/style.scss */
+#main_avator {
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  position: relative;
+  top: 60px;
+}
+
+/* line 239, ../sass/style.scss */
+#main_avator_field {
+  height: 160px;
+}
+
+/* line 243, ../sass/style.scss */
+img.post {
+  width: 80%;
+  height: 80%;
+}
+
+/* line 248, ../sass/style.scss */
+li {
+  width: 100%;
+  margin-bottom: -7px;
+  vertical-align: center;
+  display: table;
+  word-spacing: 0;
+  letter-spacing: 0;
+}
+
+/* line 257, ../sass/style.scss */
+ul.count {
+  height: 80px;
+  display: inline;
+}
+
+/* line 262, ../sass/style.scss */
+.count li {
+  display: inline;
+}
+
+/* line 266, ../sass/style.scss */
+article {
+  background: #fffbf5;
+  margin-top: 2px;
+}
+
+/* line 271, ../sass/style.scss */
+article .pic {
+  position: absolute;
+  width: 50px;
+}
+
+/* line 276, ../sass/style.scss */
+article img.avator {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+/* line 282, ../sass/style.scss */
+article .header {
+  text-align: right;
+}
+
+/* line 286, ../sass/style.scss */
+article .post_detail {
+  margin-left: 60px;
+  width: 85%;
+  display: inline-block;
+  text-align: left;
+}
+
+/* line 293, ../sass/style.scss */
+img.post {
+  width: 100%;
+}
+
+/* line 297, ../sass/style.scss */
+.header .icon-loop, .header .name {
+  float: left;
+  display: inline-block;
+}
+
+/* line 302, ../sass/style.scss */
+.origin {
+  float: left;
+  display: inline-block;
+}
+
+/* line 307, ../sass/style.scss */
+article .time {
+  display: inline-block;
+}
+
+/* line 311, ../sass/style.scss */
+article .footer {
+  text-align: right;
+}
+
+/* line 315, ../sass/style.scss */
+.footer .icon-redo, .icon-star3, .icon-loop, .loop-count, .more {
+  float: left;
+  display: inline-block;
+}
+
+/* line 320, ../sass/style.scss */
+section.recommend .philippines_trends, .who_to_follow {
+  font-weight: lighter;
+  padding: 20px;
+}
+
+/* line 325, ../sass/style.scss */
+section.recommend .philippines_trends {
+  color: #80a8cc;
+}
+
+/* line 329, ../sass/style.scss */
+section.recommend .title {
+  color: #000000;
+}
+
+/* line 332, ../sass/style.scss */
+section.recommend section {
+  margin-bottom: 20px;
+}
+
+/* line 335, ../sass/style.scss */
+section.recommend section img.avator {
+  position: relative;
+  float: left;
+}
+
+/* line 340, ../sass/style.scss */
+section.recommend .follow_detail {
+  position: relative;
+  display: block;
+  width: 80%;
+}
+
+/* line 346, ../sass/style.scss */
+section.recommend section .follow {
+  position: relative;
+  float: right;
+}
+
+/* line 351, ../sass/style.scss */
+.who_to_follow .more {
+  float: right;
+  color: #6c94b8;
+}
+
+/* line 356, ../sass/style.scss */
+.who_to_follow .role {
+  color: #c6c1b0;
 }

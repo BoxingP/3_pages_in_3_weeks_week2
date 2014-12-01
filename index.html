@@ -14,51 +14,81 @@
 <body>
 <header>
     <nav>
-        <div class="create_new_post icon-quill"></div>
-        <div class="notification icon-bell"></div>
-        <div class="mail icon-envelope"></div>
-        <div class="tag icon-">#</div>
-        <div class="logo icon-twitter"></div>
-        <div class="search icon-search"></div>
-        <div class="avator"><img src="/resources/luban-resized.jpg"></div>
+        <div class="create_new_post">
+            <i class="icon-quill"></i>
+        </div>
+        <div class="split"></div>
+        <div class="notification">
+            <i class="icon-bell"></i>
+        </div>
+        <div class="mail">
+            <i class="icon-envelope"></i>
+        </div>
+        <div class="tag">
+            <i class="icon-tag"></i>
+        </div>
+        <div class="search">
+            <p>Search</p>
+
+            <i class="icon-search"></i>
+        </div>
+        <div class="setting"><img class="setting" src="/resources/me.jpg"></div>
+        <i class="icon-twitter"></i>
     </nav>
 </header>
-
+<div>
 <section class="personal_information">
-    <div class="avator">
-        <img src="/resources/luban-resized.jpg">
+    <div id="main_avator_field">
+        <img class="avator" id="main_avator" src="/resources/me.jpg">
     </div>
     <div class="information">
-        <div class="name">Kerem Suer</div>
-        <div class="introduction">A falsis, bromium primus demissio.Fclasselis vigil cito carpseriss devirginato est.</div>
-        <div class="icon-link"></div>
-        <div class="web">www.kerem.co</div>
-        <div class="follow">follow</div>
-        <div class="photo">
+        <p class="name">Kerem Suer</p>
+        <p class="introduction">A falsis, bromium primus demissio.Fclasselis vigil cito carpseriss devirginato est.
+        </p>
+        <span><i class="icon-link"></i></span>
+        <span class="web">www.kerem.co</span>
+        <p class="follow">follow</p>
+        <div class="photo_preview">
             <ul>
-                <img src="/resources/clover-resized.jpg">
-                <img src="/resources/clover-resized.jpg">
-                <img src="/resources/clover-resized.jpg">
-                <img src="/resources/clover-resized.jpg">
-                <img src="/resources/clover-resized.jpg">
-                <img src="/resources/clover-resized.jpg">
-                <img src="/resources/clover-resized.jpg">
-                <img src="/resources/clover-resized.jpg">
-                <img src="/resources/clover-resized.jpg">
+                <li>
+                    <img class="preview" src="/resources/preview.jpg">
+                    <img class="preview" src="/resources/preview.jpg">
+                    <img class="preview" src="/resources/preview.jpg">
+                </li>
+                <li>
+                    <img class="preview" src="/resources/preview.jpg">
+                    <img class="preview" src="/resources/preview.jpg">
+                    <img class="preview" src="/resources/preview.jpg">
+                </li>
+                <li>
+                    <img class="preview" src="/resources/preview.jpg">
+                    <img class="preview" src="/resources/preview.jpg">
+                    <img class="preview" src="/resources/preview.jpg">
+                </li>
             </ul>
         </div>
         <div class="activities">
-            <div>ACTIVITIES</div>
-            <div class="icon-plus"></div>
-            <div>Followed Eddie</div>
-            <div class="icon-redo"></div>
-            <div>Replied to Alexander Tweet</div>
-            <div class="icon-loop"></div>
-            <div>Retweeted Eric Tweet</div>
-            <div class="icon-loop"></div>
-            <div>Retweeted Eric Tweet</div>
-            <div class="icon-star3"></div>
-            <div>Favorited John Tweet</div>
+            <p>ACTIVITIES</p>
+            <p>
+            <i class="icon-plus"></i>
+            <span class="function">Followed </span><span class="name">Eddie</span>
+                </p>
+            <p>
+            <i class="icon-redo"></i>
+            <span class="function">Replied to </span><span class="name">Alexander Tweet</span>
+                </p>
+            <p>
+            <i class="icon-loop"></i>
+            <span class="function">Retweeted  </span><span class="name">Eric Tweet</span>
+                </p>
+            <p>
+            <i class="icon-loop"></i>
+            <span class="function">Retweeted  </span><span class="name">Eric Tweet</span>
+                </p>
+            <p>
+            <i class="icon-star3"></i>
+            <span class="function">Favorited  </span><span class="name">John Tweet</span>
+            </p>
         </div>
 
     </div>
@@ -66,101 +96,137 @@
 </section>
 <section class="posts">
     <div class="count">
-        <div class="tweets">
-            <div>TWEETS</div>
-            <div>200</div>
-        </div>
-        <div class="photos_vclasseos">
-            <div>PHOTOS/VclassEO</div>
-            <div>200</div>
-        </div>
-        <div class="following">
-            <div>FOLLOWING</div>
-            <div>200</div>
-        </div>
-        <div class="followers">
-            <div>FOLLOWERS</div>
-            <div>1M</div>
-        </div>
+        <ul>
+            <li class="tweets">
+                <div>TWEETS</div>
+                <div>200</div>
+            </li>
+            <li class="photos_videos">
+                <div>PHOTOS/VIDEOS</div>
+                <div>200</div>
+            </li>
+            <li class="following">
+                <div>FOLLOWING</div>
+                <div>200</div>
+            </li>
+            <li class="followers">
+                <div>FOLLOWERS</div>
+                <div>1M</div>
+            </li>
+        </ul>
     </div>
     <div class="articles">
         <article>
-            <div class="avator"><img src="/resources/luban-resized.jpg"></div>
-            <div>Kerem Suer</div>
-            <div>@Kerem</div>
-            <div>2m</div>
-            <div class="post">Medicina de teres domina, demitto usus!</div>
-            <div class="footer">
-                <div class="icon-redo"></div>
-                <div class="icon-star3"></div>
-                <div class="icon-loop"></div>
-                <div class="loop-count">20</div>
-                <div class="more">...</div>
-                <div class="icon-expand"></div>
+            <div class="pic">
+                <img class="avator" src="/resources/me.jpg">
+            </div>
+            <div class="post_detail">
+                <div class="header">
+                    <div class="name">Kerem Suer</div>
+                    <div class="origin">@Kerem</div>
+                    <div class="time">2m</div>
+                </div>
+                <div class="post">Medicina de teres domina, demitto usus!</div>
+                <div class="footer">
+                    <i class="icon-redo"></i>
+                    <i class="icon-star3"></i>
+                    <i class="icon-loop"></i>
+                    <div class="loop-count">20</div>
+                    <div class="more">...</div>
+                    <i class="icon-expand"></i>
+                </div>
             </div>
         </article>
         <article>
-            <div class="avator"><img src="/resources/luban-resized.jpg"></div>
-            <div class="icon-loop"></div>
-            <div>AxelHerrmann</div>
-            <div>@axel_herrmann</div>
-            <div>1h</div>
-            <div class="post">Medicina de teres domina, demitto usus!</div>
-            <div class="footer">
-                <div class="icon-redo"></div>
-                <div class="icon-star3"></div>
-                <div class="icon-loop"></div>
-                <div class="more">...</div>
-                <div class="icon-expand"></div>
+            <div class="pic">
+                <img class="avator" src="/resources/luban-resized.jpg">
+            </div>
+            <div class="post_detail">
+                <div class="header">
+
+                    <i class="icon-loop"></i>
+                    <div class="name">AxelHerrmann</div>
+                    <div class="origin">@axel_herrmann</div>
+                    <div class="time">1h</div>
+                </div>
+
+                <div class="post">Medicina de teres domina, demitto usus!</div>
+                <div class="footer">
+                    <i class="icon-redo"></i>
+                    <i class="icon-star3"></i>
+                    <i class="icon-loop"></i>
+                    <div class="more">...</div>
+                    <i class="icon-expand"></i>
+                </div>
             </div>
         </article>
         <article>
-            <div class="avator"><img src="/resources/luban-resized.jpg"></div>
-            <div>Kerem Suer</div>
-            <div>@kerem</div>
-            <div>5h</div>
-            <div class="post"><img src="/resources/cube-resized.jpg"></div>
-            <div class="footer">
-                <div class="icon-redo"></div>
-                <div class="icon-star3"></div>
-                <div class="icon-loop"></div>
-                <div class="more">...</div>
-                <div class="icon-expand"></div>
+            <div class="pic">
+                <img class="avator" src="/resources/me.jpg">
+            </div>
+            <div class="post_detail">
+                <div class="header">
+                    <div class="name">Kerem Suer</div>
+                    <div class="origin">@kerem</div>
+                    <div class="time">5h</div>
+                </div>
+                <div class="post"><img class="post" src="/resources/cube-resized.jpg"></div>
+                <div class="footer">
+                    <i class="icon-redo"></i>
+                    <i class="icon-star3"></i>
+                    <i class="icon-loop"></i>
+                    <div class="more">...</div>
+                    <i class="icon-expand"></i>
+                </div>
             </div>
         </article>
         <article>
-            <div class="avator"><img src="/resources/luban-resized.jpg"></div>
-            <div>Kerem Suer</div>
-            <div>@kerem</div>
-            <div>Yesterday</div>
-            <div class="post">Heu, alter nuptia!Clemens zirbuss ducunt ad omnia.</div>
-            <div class="footer">
-                <div class="icon-redo"></div>
-                <div class="icon-star3"></div>
-                <div class="icon-loop"></div>
-                <div class="more">...</div>
-                <div class="icon-expand"></div>
+            <div class="pic">
+                <img class="avator" src="/resources/me.jpg">
+            </div>
+            <div class="post_detail">
+                <div class="header">
+                    <div class="name">Kerem Suer</div>
+                    <div class="origin">@kerem</div>
+                    <div class="time">Yesterday</div>
+
+                </div>
+
+                <div class="post">Heu, alter nuptia!Clemens zirbuss ducunt ad omnia.</div>
+                <div class="footer">
+                    <i class="icon-redo"></i>
+                    <i class="icon-star3"></i>
+                    <i class="icon-loop"></i>
+                    <div class="more">...</div>
+                    <i class="icon-expand"></i>
+                </div>
             </div>
         </article>
         <article>
-            <div class="avator"><img src="/resources/luban-resized.jpg"></div>
-            <div>Kerem Suer</div>
-            <div>@kerem</div>
-            <div>Yesterday</div>
-            <div class="post">Heu, alter nuptia!Clemens zirbuss ducunt ad omnia.</div>
-            <div class="footer">
-                <div class="icon-redo"></div>
-                <div class="icon-star3"></div>
-                <div class="icon-loop"></div>
-                <div class="more">...</div>
-                <div class="icon-expand"></div>
+            <div class="pic">
+                <img class="avator" src="/resources/me.jpg">
+            </div>
+            <div class="post_detail">
+                <div class="header">
+                    <div class="name">Kerem Suer</div>
+                    <div class="origin">@kerem</div>
+                    <div class="time">Yesterday</div>
+                </div>
+                <div class="post">Heu, alter nuptia!Clemens zirbuss ducunt ad omnia.</div>
+                <div class="footer">
+                    <i class="icon-redo"></i>
+                    <i class="icon-star3"></i>
+                    <i class="icon-loop"></i>
+                    <i class="more">...</i>
+                    <i class="icon-expand"></i>
+                </div>
             </div>
         </article>
     </div>
 </section>
 <section class="recommend">
     <div class="philippines_trends">
-        <div>PHILIPPINES TRENDS</div>
+        <p class="title">PHILIPPINES TRENDS</p>
         <div>#DONTSTOPLYRICVIDEO</div>
         <div>#MLFTSItsComplicated</div>
         <div>#TangaLangMoments</div>
@@ -173,40 +239,62 @@
         <div>JuiQuen For OBTCHTheMovie</div>
     </div>
     <div class="who_to_follow">
-        <div>WHO TO FOLLOW</div>
-        <div>More</div>
+        <div>
+        <span class="title">WHO TO FOLLOW</span>
+        <span class="more">More</span>
+            </div>
         <section>
-            <div><img src="/resources/clover-resized.jpg"></div>
-            <div>Chris Spooner</div>
-            <div class="follow">+</div>
-            <div>Designer, Blogger</div>
+            <div><img class="avator" src="/resources/clover-resized.jpg"></div>
+            <div class="follow_detail">
+                <div>
+                <span class="name">Chris Spooner</span>
+                <span class="follow">+</span>
+                    </div>
+                <span class="role">Designer, Blogger</span>
+            </div>
         </section>
         <section>
-            <div><img src="/resources/clover-resized.jpg"></div>
-            <div>HaraldurThorleifs...</div>
-            <div class="follow">+</div>
-            <div>Creative Director</div>
+            <div><img class="avator" src="/resources/clover-resized.jpg"></div>
+            <div class="follow_detail">
+                <div>
+                    <span>HaraldurThorleifs...</span>
+                    <span class="follow">+</span>
+                </div>
+                <span class="role">Creative Director</span>
+            </div>
         </section>
         <section>
-            <div><img src="/resources/clover-resized.jpg"></div>
-            <div>James Fletcher</div>
-            <div class="follow">+</div>
-            <div>Designer, Builder...</div>
+            <div><img class="avator" src="/resources/clover-resized.jpg"></div>
+            <div class="follow_detail">
+                <div>
+                    <span>James Fletcher</span>
+                    <span class="follow">+</span>
+                </div>
+                <span class="role">Designer, Builder...</span>
+            </div>
         </section>
         <section>
-            <div><img src="/resources/clover-resized.jpg"></div>
-            <div>Nathan Powell</div>
-            <div class="follow">+</div>
-            <div>Design Consultant</div>
+            <div><img class="avator" src="/resources/clover-resized.jpg"></div>
+            <div class="follow_detail">
+                <div>
+                    <span>Nathan Powell</span>
+                    <span class="follow">+</span>
+                </div>
+                <span class="role">Design Consultant</span>
+            </div>
         </section>
         <section>
-            <div><img src="/resources/clover-resized.jpg"></div>
-            <div>Nick Slater</div>
-            <div class="follow">+</div>
-            <div>Illustrator</div>
+            <div><img class="avator" src="/resources/clover-resized.jpg"></div>
+            <div class="follow_detail">
+                <div>
+                    <span>Nick Slater</span>
+                    <span class="follow">+</span>
+                </div>
+                <span class="role">Illustrator</span>
+            </div>
         </section>
     </div>
 </section>
-
+</div>
 </body>
 </html>
