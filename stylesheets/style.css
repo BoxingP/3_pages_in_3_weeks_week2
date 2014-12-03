@@ -72,7 +72,7 @@ body {
   background: #f2eee8;
 }
 /* line 11, ../sass/style.scss */
-body img.avator, body .setting {
+body img.avator, body .profile {
   height: 40px;
   width: 40px;
   border-radius: 40px;
@@ -85,7 +85,7 @@ header {
   background: #fffbf5;
   align-items: center;
 }
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 header nav.left {
   position: relative;
   float: left;
@@ -93,13 +93,13 @@ header nav.left {
   display: inline-block;
   height: 100%;
 }
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 header nav.left .create_new_post, header nav.left .split, header nav.left .notification, header nav.left .mail, header nav.left .tag {
   align-items: center;
   float: left;
   display: inline-block;
 }
-/* line 34, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 header nav.left .create_new_post, header nav.left .notification, header nav.left .mail, header nav.left .tag {
   height: 40px;
   margin: 3% 3% 2% 3%;
@@ -108,25 +108,35 @@ header nav.left .create_new_post, header nav.left .notification, header nav.left
   border: solid 1px #f2eee8;
   border-radius: 40px;
 }
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 header nav.left .create_new_post {
   margin-top: 4%;
   background: #80a8cc;
   border: none;
   color: #f2eee8;
 }
-/* line 50, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
+header nav.left .create_new_post:hover {
+  background: #f2eee8;
+  color: #80a8cc;
+}
+/* line 56, ../sass/style.scss */
+header nav.left .notification:hover, header nav.left .mail:hover, header nav.left .tag:hover {
+  background: #f2eee8;
+  color: #fffbf5;
+}
+/* line 61, ../sass/style.scss */
 header nav.left .split {
   height: 100%;
   width: 1px;
   background: #f2eee8;
 }
-/* line 55, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 header nav.left .icon-feather, header nav.left .icon-bell, header nav.left .icon-mail, header nav.left .icon-tag {
   position: relative;
   top: 20%;
 }
-/* line 62, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 header .logo {
   float: left;
   position: relative;
@@ -137,7 +147,7 @@ header .logo {
   display: inline-block;
   height: 100%;
 }
-/* line 73, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 header nav.right {
   float: left;
   position: relative;
@@ -145,7 +155,7 @@ header nav.right {
   display: inline-block;
   height: 100%;
 }
-/* line 79, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 header nav.right .search {
   float: left;
   display: inline-block;
@@ -156,7 +166,7 @@ header nav.right .search {
   height: 60%;
   width: 70%;
 }
-/* line 88, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 header nav.right .search span {
   float: left;
   position: relative;
@@ -164,23 +174,40 @@ header nav.right .search span {
   margin-left: 5%;
   color: #f2eee8;
 }
-/* line 95, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 header nav.right .search .icon-search {
   float: right;
   position: relative;
   top: 30%;
   margin-right: 2%;
 }
-/* line 102, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 header nav.right .setting {
   float: left;
   display: inline-block;
   position: relative;
   margin-left: 5%;
+  top: 18%;
+  height: 100%;
+}
+/* line 121, ../sass/style.scss */
+header nav.right .setting .icon-cog {
+  float: left;
+  position: relative;
   top: 20%;
+  left: 50%;
+  opacity: 0;
+}
+/* line 131, ../sass/style.scss */
+header nav.right .setting:hover img {
+  opacity: 0.4;
+}
+/* line 134, ../sass/style.scss */
+header nav.right .setting:hover .icon-cog {
+  opacity: 1;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 section.personal_information {
   float: left;
   position: relative;
@@ -191,17 +218,22 @@ section.personal_information {
   color: #fffbf5;
   font-weight: lighter;
   font-size: 12px;
+  box-shadow: 0px 1px 0px #e0dcd7 inset;
 }
-/* line 124, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 section.personal_information p.name {
   font-weight: bold;
   font-size: 16px;
 }
-/* line 129, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 section.personal_information .introduction {
   padding: 20px;
 }
-/* line 133, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
+section.personal_information .web:hover {
+  color: #6c94b8;
+}
+/* line 167, ../sass/style.scss */
 section.personal_information .follow {
   margin: 30px auto;
   align-content: center;
@@ -213,30 +245,39 @@ section.personal_information .follow {
   font-size: 16px;
   line-height: 30px;
 }
-/* line 145, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
+section.personal_information .follow:hover {
+  background: #fffbf5;
+  color: #6c94b8;
+}
+/* line 184, ../sass/style.scss */
 section.personal_information .photo_preview {
   margin: 40px 0 20px 0;
 }
-/* line 149, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 section.personal_information .activities {
   padding: 20px;
   text-align: left;
 }
-/* line 153, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 section.personal_information .activities i {
   color: #6c94b8;
   margin-right: 1%;
 }
-/* line 158, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 section.personal_information .activities span.function {
   color: #6c94b8;
 }
-/* line 162, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 section.personal_information .activities span.name {
   text-decoration: underline;
 }
+/* line 205, ../sass/style.scss */
+section.personal_information .activities span.name:hover {
+  color: #6c94b8;
+}
 
-/* line 168, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 section.posts {
   position: relative;
   float: left;
@@ -245,37 +286,38 @@ section.posts {
   display: inline-block;
   overflow-y: auto;
   background: #f2eee8;
+  box-shadow: 0px 1px 0px #e0dcd7 inset;
 }
-/* line 176, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 section.posts ul {
   padding-bottom: 0;
 }
-/* line 179, ../sass/style.scss */
-section.posts li:hover {
+/* line 224, ../sass/style.scss */
+section.posts ul li:hover {
   border-bottom: #80a8cc solid 8px;
 }
-/* line 183, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 section.posts .post_detail .header, section.posts .post_detail .post, section.posts .post_detail .footer {
   margin: 10px 0;
   font-size: 12px;
   font-weight: lighter;
 }
-/* line 190, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 section.posts .footer i:hover {
   color: #80a8cc;
 }
-/* line 195, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 section.posts div.count {
   background: #fffbf5;
   margin: 4%;
   height: 65px;
   align-content: center;
 }
-/* line 202, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 section.posts .articles {
   margin: 0 4% 0 4%;
 }
-/* line 206, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 section.posts li.tweets, section.posts li.photos_videos, section.posts li.following, section.posts li.followers {
   position: relative;
   float: left;
@@ -283,50 +325,50 @@ section.posts li.tweets, section.posts li.photos_videos, section.posts li.follow
   display: table;
   margin-top: 10px;
 }
-/* line 214, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 section.posts .post_detail {
   padding: 10px 0 0 0;
 }
-/* line 217, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 section.posts .post_detail .header {
   color: #c6c1b0;
   font-size: 16px;
 }
-/* line 221, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 section.posts .post_detail .header .name {
   font-weight: bold;
   color: #000000;
 }
-/* line 226, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 section.posts .post_detail .header i {
   color: #acd373;
   font-size: 20px;
 }
-/* line 231, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 section.posts .post_detail .header .origin {
   margin-left: 1%;
 }
-/* line 236, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 section.posts .post_detail .footer {
   color: #c6c1b0;
   font-size: 20px;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 }
-/* line 241, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 section.posts .post_detail .footer i.icon-forward, section.posts .post_detail .footer i.icon-star {
   margin-right: 2%;
 }
-/* line 245, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 section.posts .post_detail .footer i.icon-ellipsis {
   margin-left: 2%;
 }
-/* line 249, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 section.posts .post_detail .footer span.cycle-count {
   height: 16px;
   font-size: 14px;
 }
 
-/* line 258, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 section.recommend {
   position: relative;
   width: 20%;
@@ -335,66 +377,67 @@ section.recommend {
   display: inline-block;
   text-align: left;
   font-weight: lighter;
+  box-shadow: 0px 1px 0px #e0dcd7 inset;
 }
-/* line 267, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 section.recommend .philippines_trends, section.recommend .who_to_follow {
   padding: 20px;
 }
-/* line 271, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 section.recommend .who_to_follow {
   font-size: 14px;
 }
-/* line 274, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 section.recommend .who_to_follow .follow_detail {
   margin: 0 0 0 50px;
 }
-/* line 278, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 section.recommend .who_to_follow .role {
   color: #c6c1b0;
 }
-/* line 282, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 section.recommend .who_to_follow .more {
   float: right;
   color: #6c94b8;
 }
-/* line 288, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 section.recommend .philippines_trends {
   color: #80a8cc;
 }
-/* line 292, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 section.recommend .title {
   color: #000000;
   margin-bottom: 20px;
 }
-/* line 297, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 section.recommend .follow_detail {
   position: relative;
   display: block;
   width: 80%;
 }
-/* line 303, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 section.recommend section {
   margin-bottom: 20px;
 }
-/* line 306, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 section.recommend section img.avator {
   position: relative;
   float: left;
 }
-/* line 311, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 section.recommend section .follow {
   position: relative;
   float: right;
 }
 
-/* line 319, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 img.preview {
   width: 33.3333%;
   height: width;
   margin: 0;
 }
 
-/* line 325, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 #main_avator {
   height: 80px;
   width: 80px;
@@ -403,18 +446,18 @@ img.preview {
   top: 60px;
 }
 
-/* line 333, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 #main_avator_field {
   height: 160px;
 }
 
-/* line 337, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 img.post {
   width: 80%;
   height: 80%;
 }
 
-/* line 342, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 li {
   width: 100%;
   margin-bottom: -7px;
@@ -424,42 +467,42 @@ li {
   letter-spacing: 0;
 }
 
-/* line 351, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 ul.count {
   height: 80px;
   display: inline;
 }
 
-/* line 356, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .count li {
   display: inline;
 }
 
-/* line 360, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 article {
   background: #fffbf5;
   margin-top: 2px;
 }
 
-/* line 365, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 article .pic {
   position: absolute;
   width: 50px;
 }
 
-/* line 370, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 article img.avator {
   position: relative;
   top: 20px;
   left: 30px;
 }
 
-/* line 376, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 article .header {
   text-align: right;
 }
 
-/* line 380, ../sass/style.scss */
+/* line 430, ../sass/style.scss */
 article .post_detail {
   margin-left: 60px;
   width: 85%;
@@ -467,34 +510,34 @@ article .post_detail {
   text-align: left;
 }
 
-/* line 387, ../sass/style.scss */
+/* line 437, ../sass/style.scss */
 img.post {
   width: 100%;
 }
 
-/* line 391, ../sass/style.scss */
+/* line 441, ../sass/style.scss */
 section.posts .header .icon-cycle, section.posts .header .name {
   float: left;
   display: inline-block;
 }
 
-/* line 396, ../sass/style.scss */
+/* line 446, ../sass/style.scss */
 section.posts .origin {
   float: left;
   display: inline-block;
 }
 
-/* line 401, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
 article .time {
   display: inline-block;
 }
 
-/* line 405, ../sass/style.scss */
+/* line 455, ../sass/style.scss */
 article .footer {
   text-align: right;
 }
 
-/* line 409, ../sass/style.scss */
+/* line 459, ../sass/style.scss */
 .footer .icon-forward, .icon-star, .icon-cycle, .cycle-count, .icon-ellipsis {
   float: left;
   display: inline-block;
