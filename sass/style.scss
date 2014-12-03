@@ -27,11 +27,13 @@ header {
     width: 20%;
     display: inline-block;
     height: 100%;
+
     .create_new_post, .split, .notification, .mail, .tag {
       align-items: center;
       float: left;
       display: inline-block;
     }
+
     .create_new_post, .notification, .mail, .tag {
       height: 40px;
       margin: 3% 3% 2% 3%;
@@ -63,7 +65,8 @@ header {
       width: 1px;
       background: #f2eee8;
     }
-    .icon-feather, .icon-bell, .icon-mail, .icon-tag {
+    
+    i {
       position: relative;
       top: 20%;
     }
@@ -74,7 +77,7 @@ header {
     float: left;
     position: relative;
     width: 60%;
-    top:30%;
+    top: 30%;
     font-size: 30px;
     color: #80a8cc;
     display: inline-block;
@@ -123,16 +126,16 @@ header {
         position: relative;
         top: 20%;
         left: 50%;
-        opacity:0;
+        opacity: 0;
       }
     }
 
     .setting:hover {
       img {
-        opacity:0.4;
+        opacity: 0.4;
       }
       .icon-cog {
-        opacity:1;
+        opacity: 1;
       }
     }
 
@@ -150,6 +153,18 @@ section.personal_information {
   font-weight: lighter;
   font-size: 12px;
   box-shadow: 0px 1px 0px #e0dcd7 inset;
+
+  #main_avator {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    position: relative;
+    top: 60px;
+  }
+
+  #main_avator_field {
+    height: 160px;
+  }
 
   p.name {
     font-weight: bold;
@@ -181,8 +196,23 @@ section.personal_information {
     color: #6c94b8;
   }
 
+  img.preview {
+    width: 33.3333%;
+    height: width;
+    margin: 0;
+  }
+
   .photo_preview {
     margin: 40px 0 20px 0;
+
+    li {
+      width: 100%;
+      margin-bottom: -7px;
+      vertical-align: center;
+      display: table;
+      word-spacing: 0;
+      letter-spacing: 0;
+    }
   }
 
   .activities {
@@ -226,80 +256,118 @@ section.posts {
     }
   }
 
-
-
-  .post_detail .header, .post_detail .post,  .post_detail .footer {
-    margin: 10px 0;
-    font-size: 12px;
-    font-weight: lighter;
-  }
-
-  .footer {
-    i:hover {
-      color: #80a8cc;
-    }
-  }
-
   div.count {
     background: #fffbf5;
     margin: 4%;
     height: 65px;
     align-content: center;
+
+    li.tweets, li.photos_videos, li.following, li.followers {
+      position: relative;
+      float: left;
+      width: 25%;
+      display: table;
+      margin-top: 10px;
+    }
   }
 
   .articles {
     margin: 0 4% 0 4%;
-  }
 
-  li.tweets, li.photos_videos, li.following, li.followers {
-    position: relative;
-    float: left;
-    width: 25%;
-    display: table;
-    margin-top: 10px;
-  }
+    article {
+      background: #fffbf5;
+      margin-top: 2px;
 
-  .post_detail {
-    padding: 10px 0 0 0;
+      .pic {
+        position: absolute;
+        width: 50px;
 
-    .header {
-      color: #c6c1b0;
-      font-size: 16px;
-
-      .name {
-        font-weight: bold;
-        color: #000000;
       }
 
-      i {
-        color: #acd373;
-        font-size: 20px;
+      img.avator {
+        position: relative;
+        top: 20px;
+        left: 30px;
       }
 
-      .origin {
-        margin-left: 1%;
+      img.post {
+        width: 100%;
+      }
+
+      .post_detail {
+        padding: 10px 0 0 0;
+        margin-left: 60px;
+        width: 85%;
+        display: inline-block;
+        text-align: left;
+        font-weight: lighter;
+
+        .header, .post, .footer {
+          margin: 10px 0;
+          font-size: 12px;
+        }
+
+        .header {
+          text-align: right;
+          color: #c6c1b0;
+          font-size: 16px;
+
+          i, .name, .origin {
+            float: left;
+            display: inline-block;
+          }
+
+          i {
+            color: #acd373;
+            font-size: 20px;
+          }
+
+          .name {
+            font-weight: bold;
+            color: #000;
+          }
+
+          .origin {
+            margin-left: 1%;
+          }
+
+          .time {
+            display: inline-block;
+          }
+        }
+
+        .footer {
+          color: #c6c1b0;
+          font-size: 20px;
+          margin-bottom: 1%;
+          text-align: right;
+
+          .icon-forward, .icon-star, .icon-cycle, .cycle-count, .icon-ellipsis {
+            float: left;
+            display: inline-block;
+          }
+
+          i.icon-forward, i.icon-star {
+            margin-right: 2%;
+          }
+
+          i.icon-ellipsis {
+            margin-left: 2%;
+          }
+
+          span.cycle-count {
+            height: 16px;
+            font-size: 14px;
+          }
+
+          i:hover {
+            color: #80a8cc;
+          }
+        }
+
       }
     }
 
-    .footer {
-      color: #c6c1b0;
-      font-size: 20px;
-      margin-bottom: 1%;
-
-      i.icon-forward, i.icon-star {
-        margin-right: 2%;
-      }
-
-      i.icon-ellipsis {
-        margin-left: 2%;
-      }
-
-      span.cycle-count {
-        height: 16px;
-        font-size: 14px;
-      }
-
-    }
   }
 
 }
@@ -364,99 +432,4 @@ section.recommend {
     }
 
   }
-}
-
-img.preview {
-  width: 33.3333%;
-  height: width;
-  margin: 0;
-}
-
-#main_avator {
-  height: 80px;
-  width: 80px;
-  border-radius: 80px;
-  position: relative;
-  top: 60px;
-}
-
-#main_avator_field {
-  height: 160px;
-}
-
-img.post {
-  width: 80%;
-  height: 80%;
-}
-
-li {
-  width: 100%;
-  margin-bottom: -7px;
-  vertical-align: center;
-  display: table;
-  word-spacing: 0;
-  letter-spacing: 0;
-}
-
-ul.count {
-  height: 80px;
-  display: inline;
-}
-
-.count li {
-  display: inline;
-}
-
-article {
-  background: #fffbf5;
-  margin-top: 2px;
-}
-
-article .pic {
-  position: absolute;
-  width: 50px;
-}
-
-article img.avator {
-  position: relative;
-  top: 20px;
-  left: 30px;
-}
-
-article .header {
-  text-align: right;
-}
-
-article .post_detail {
-  margin-left: 60px;
-  width: 85%;
-  display: inline-block;
-  text-align: left;
-}
-
-img.post {
-  width: 100%;
-}
-
-section.posts .header .icon-cycle, section.posts .header .name {
-  float: left;
-  display: inline-block;
-}
-
-section.posts .origin {
-  float: left;
-  display: inline-block;
-}
-
-article .time {
-  display: inline-block;
-}
-
-article .footer {
-  text-align: right;
-}
-
-.footer .icon-forward, .icon-star, .icon-cycle, .cycle-count, .icon-ellipsis {
-  float: left;
-  display: inline-block;
 }
