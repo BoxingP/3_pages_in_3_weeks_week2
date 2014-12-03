@@ -7,6 +7,12 @@ body {
   margin: 0 auto;
   width: 100%;
   background: #f2eee8;
+
+  img.avator, .setting {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+  }
 }
 
 header {
@@ -114,52 +120,49 @@ section.personal_information {
   color: #fffbf5;
   font-weight: lighter;
   font-size: 12px;
-}
 
-section.personal_information p.name {
-  font-weight: bold;
-  font-size: 16px;
-}
+  p.name {
+    font-weight: bold;
+    font-size: 16px;
+  }
 
-section.personal_information .introduction {
-  padding: 20px;
-}
+  .introduction {
+    padding: 20px;
+  }
 
-section.personal_information .follow {
-  margin: 30px auto;
-  align-content: center;
-  background: #6c94b8;
-  width: 42%;
-  height: 30px;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-}
+  .follow {
+    margin: 30px auto;
+    align-content: center;
+    background: #6c94b8;
+    width: 42%;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 30px;
+  }
 
-section.personal_information .follow {
-  line-height: 30px;
-}
+  .photo_preview {
+    margin: 40px 0 20px 0;
+  }
 
-section.personal_information .photo_preview {
-  margin: 40px 0 20px 0;
-}
+  .activities {
+    padding: 20px;
+    text-align: left;
 
-section.personal_information .activities {
-  padding: 20px;
-  text-align: left;
-}
+    i {
+      color: #6c94b8;
+      margin-right: 1%;
+    }
 
-section.personal_information .activities i {
-  color: #6c94b8;
-  margin-right: 1%;
-}
+    span.function {
+      color: #6c94b8;
+    }
 
-section.personal_information .activities span.function {
-  color: #6c94b8;
-}
-
-section.personal_information .activities span.name {
-  text-decoration: underline;
+    span.name {
+      text-decoration: underline;
+    }
+  }
 }
 
 section.posts {
@@ -170,76 +173,86 @@ section.posts {
   display: inline-block;
   overflow-y: auto;
   background: #f2eee8;
-}
+  ul {
+    padding-bottom: 0;
+  }
+  li:hover {
+    border-bottom: #80a8cc solid 8px;
+  }
 
-div.count {
-  background: #fffbf5;
-  margin: 4%;
-  height: 65px;
-  align-content: center;
-}
+  .post_detail .header, .post_detail .post,  .post_detail .footer {
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: lighter;
+  }
 
-.articles {
-  margin: 0 4% 0 4%;
-}
+  .footer {
+    i:hover {
+      color: #80a8cc;
+    }
+  }
 
-li.tweets, li.photos_videos, li.following, li.followers {
-  position: relative;
-  float: left;
-  width: 25%;
-  display: table;
-  margin-top: 10px;
-}
+  div.count {
+    background: #fffbf5;
+    margin: 4%;
+    height: 65px;
+    align-content: center;
+  }
 
-section.posts .post_detail {
-  padding: 10px 0 0 0;
-}
+  .articles {
+    margin: 0 4% 0 4%;
+  }
 
-section.posts .post_detail .header, section.posts .post_detail .post, section.posts .post_detail .footer {
-  margin: 10px 0;
-  font-size: 12px;
-  font-weight: lighter;
-}
+  li.tweets, li.photos_videos, li.following, li.followers {
+    position: relative;
+    float: left;
+    width: 25%;
+    display: table;
+    margin-top: 10px;
+  }
 
-section.posts .post_detail .header {
-  color: #c6c1b0;
-  font-size: 16px;
-}
+  .post_detail {
+    padding: 10px 0 0 0;
 
-section.posts .post_detail .footer {
-  color: #c6c1b0;
-  font-size: 20px;
-}
+    .header {
+      color: #c6c1b0;
+      font-size: 16px;
 
-section.posts .post_detail .footer {
-  margin-bottom: 5%;
-}
+      .name {
+        font-weight: bold;
+        color: #000000;
+      }
 
-section.posts .post_detail .footer i.icon-forward, section.posts .post_detail .footer i.icon-star {
-  margin-right: 2%;
-}
+      i {
+        color: #acd373;
+        font-size: 20px;
+      }
 
-section.posts .post_detail .footer i.icon-ellipsis {
-  margin-left: 2%;
-}
+      .origin {
+        margin-left: 1%;
+      }
+    }
 
-section.posts .post_detail .header .name {
-  font-weight: bold;
-  color: #000000;
-}
+    .footer {
+      color: #c6c1b0;
+      font-size: 20px;
+      margin-bottom: 5%;
 
-section.posts .post_detail .header i {
-  color: #acd373;
-  font-size: 20px;
-}
+      i.icon-forward, i.icon-star {
+        margin-right: 2%;
+      }
 
-section.posts .post_detail .header .origin {
-  margin-left: 1%;
-}
+      i.icon-ellipsis {
+        margin-left: 2%;
+      }
 
-section.posts .post_detail .footer span.cycle-count {
-  height: 16px;
-  font-size: 14px;
+      span.cycle-count {
+        height: 16px;
+        font-size: 14px;
+      }
+    }
+  }
+
 }
 
 section.recommend {
@@ -249,12 +262,58 @@ section.recommend {
   background: #fffbf5;
   display: inline-block;
   text-align: left;
-}
+  font-weight: lighter;
 
-img.avator, .setting {
-  height: 40px;
-  width: 40px;
-  border-radius: 40px;
+  .philippines_trends, .who_to_follow {
+    padding: 20px;
+  }
+
+  .who_to_follow {
+    font-size: 14px;
+
+    .follow_detail {
+      margin: 0 0 0 50px;
+    }
+
+    .role {
+      color: #c6c1b0;
+    }
+
+    .more {
+      float: right;
+      color: #6c94b8;
+    }
+  }
+
+  .philippines_trends {
+    color: #80a8cc;
+  }
+
+  .title {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  .follow_detail {
+    position: relative;
+    display: block;
+    width: 80%;
+  }
+
+  section {
+    margin-bottom: 20px;
+
+    img.avator {
+      position: relative;
+      float: left;
+    }
+
+    .follow {
+      position: relative;
+      float: right;
+    }
+
+  }
 }
 
 img.preview {
@@ -350,55 +409,4 @@ article .footer {
 .footer .icon-forward, .icon-star, .icon-cycle, .cycle-count, .icon-ellipsis {
   float: left;
   display: inline-block;
-}
-
-section.recommend .philippines_trends, .who_to_follow {
-  font-weight: lighter;
-  padding: 20px;
-}
-
-section.recommend .philippines_trends {
-  color: #80a8cc;
-}
-
-section.recommend .title {
-  color: #000000;
-  margin-bottom: 20px;
-}
-
-section.recommend section {
-  margin-bottom: 20px;
-}
-
-section.recommend section img.avator {
-  position: relative;
-  float: left;
-}
-
-section.recommend .follow_detail {
-  position: relative;
-  display: block;
-  width: 80%;
-}
-
-section.recommend section .follow {
-  position: relative;
-  float: right;
-}
-
-.who_to_follow .more {
-  float: right;
-  color: #6c94b8;
-}
-
-.who_to_follow .role {
-  color: #c6c1b0;
-}
-
-.who_to_follow .follow_detail {
-  margin: 0 0 0 50px;
-}
-
-.who_to_follow {
-  font-size: 14px;
 }
