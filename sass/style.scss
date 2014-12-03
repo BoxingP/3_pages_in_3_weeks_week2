@@ -10,108 +10,109 @@ body {
 }
 
 header {
+  width: 100%;
   height: 60px;
   background: #fffbf5;
-}
+  align-items: center;
+  nav.left {
+    position: relative;
+    float: left;
+    width: 20%;
+    display: inline-block;
+    height: 100%;
+    .create_new_post, .split, .notification, .mail, .tag {
+      align-items: center;
+      float: left;
+      display: inline-block;
+    }
+    .create_new_post, .notification, .mail, .tag {
+      height: 40px;
+      margin: 3% 3% 2% 3%;
+      width: 40px;
+      position: relative;
+      border: solid 1px #f2eee8;
+      border-radius: 40px;
+    }
 
-.create_new_post {
-  height: 40px;
-  width: 40px;
-  border-radius: 40px;
-  float: left;
-  background: #80a8cc;
-  position: relative;
-  top: 10px;
-  left: 10px;
-}
+    .create_new_post {
+      margin-top: 4%;
+      background: #80a8cc;
+      border: none;
+      color: #f2eee8;
+    }
 
-.icon-quill {
-  position: relative;
-  top: 12px;
-  color: #ffffff;
-}
+    .split {
+      height: 100%;
+      width: 1px;
+      background: #f2eee8;
+    }
+    .icon-feather, .icon-bell, .icon-mail, .icon-tag {
+      position: relative;
+      top: 20%;
+    }
 
-.split {
-  float: left;
-  height: 60px;
-  background: #f2eee8;
-  width: 1px;
-  position: relative;
-  left: 20px;
-}
+  }
 
-.notification, .mail, .tag {
-  height: 40px;
-  width: 40px;
-  border-radius: 40px;
-  float: left;
-  border: 1px solid #f2eee8;
-  position: relative;
-  top: 10px;
-  left: 30px;
-}
+  .logo {
+    float: left;
+    position: relative;
+    width: 60%;
+    top:30%;
+    font-size: 30px;
+    color: #80a8cc;
+    display: inline-block;
+    height: 100%;
+  }
 
-.mail {
-  left: 40px;
-}
+  nav.right {
+    float: left;
+    position: relative;
+    width: 20%;
+    display: inline-block;
+    height: 100%;
+    .search {
+      float: left;
+      display: inline-block;
+      position: relative;
+      top: 20%;
+      border: 1px solid #f2eee8;
+      border-radius: 25px;
+      height: 60%;
+      width: 70%;
+      span {
+        float: left;
+        position: relative;
+        top: 20%;
+        margin-left: 5%;
+        color: #f2eee8;
+      }
+      .icon-search {
+        float: right;
+        position: relative;
+        top: 30%;
+        margin-right: 2%;
+      }
+    }
+    .setting {
+      float: left;
+      display: inline-block;
+      position: relative;
+      margin-left: 5%;
+      top: 20%;
+    }
 
-.tag {
-  left: 50px;
-}
-
-.icon-bell, .icon-envelope, .icon-tag, .icon-twitter, .icon-search {
-  position: relative;
-  top: 12px;
-}
-
-.search {
-  width: 200px;
-  height: 38px;
-  border: 2px solid #f2eee8;
-  border-radius: 25px;
-  float: left;
-  position: relative;
-  top: 10px;
-  left: 950px;
-}
-
-.search p {
-  position: relative;
-  top: -10px;
-  left: -60px;
-  color: #f2eee8;
-}
-
-.icon-search {
-  top: -45px;
-  left: 80px;
-}
-
-.setting {
-  float: right;
-  position: relative;
-  top: 5px;
-  left: -10px;
-}
-
-.icon-twitter {
-  position: relative;
-  top: 15px;
-  left: -120px;
-  align-content: middle;
-  font-size: 30px;
-  color: #80a8cc;
+  }
 }
 
 section.personal_information {
   float: left;
   position: relative;
   width: 20%;
-  height: 1000px;
+  height: 1100px;
   background: #80a8cc;
   display: inline-block;
   color: #fffbf5;
-  font-weight:lighter;
+  font-weight: lighter;
   font-size: 12px;
 }
 
@@ -135,6 +136,10 @@ section.personal_information .follow {
   font-size: 16px;
 }
 
+section.personal_information .follow {
+  line-height: 30px;
+}
+
 section.personal_information .photo_preview {
   margin: 40px 0 20px 0;
 }
@@ -146,7 +151,9 @@ section.personal_information .activities {
 
 section.personal_information .activities i {
   color: #6c94b8;
+  margin-right: 1%;
 }
+
 section.personal_information .activities span.function {
   color: #6c94b8;
 }
@@ -159,7 +166,7 @@ section.posts {
   position: relative;
   float: left;
   width: 60%;
-  height: 1000px;
+  height: 1100px;
   display: inline-block;
   overflow-y: auto;
   background: #f2eee8;
@@ -188,29 +195,57 @@ section.posts .post_detail {
   padding: 10px 0 0 0;
 }
 
-
 section.posts .post_detail .header, section.posts .post_detail .post, section.posts .post_detail .footer {
   margin: 10px 0;
   font-size: 12px;
   font-weight: lighter;
 }
 
-
-section.posts .post_detail .header, section.posts .post_detail .footer{
+section.posts .post_detail .header {
   color: #c6c1b0;
+  font-size: 16px;
+}
+
+section.posts .post_detail .footer {
+  color: #c6c1b0;
+  font-size: 20px;
+}
+
+section.posts .post_detail .footer {
+  margin-bottom: 5%;
+}
+
+section.posts .post_detail .footer i.icon-forward, section.posts .post_detail .footer i.icon-star {
+  margin-right: 2%;
+}
+
+section.posts .post_detail .footer i.icon-ellipsis {
+  margin-left: 2%;
 }
 
 section.posts .post_detail .header .name {
   font-weight: bold;
   color: #000000;
 }
+
 section.posts .post_detail .header i {
   color: #acd373;
+  font-size: 20px;
 }
+
+section.posts .post_detail .header .origin {
+  margin-left: 1%;
+}
+
+section.posts .post_detail .footer span.cycle-count {
+  height: 16px;
+  font-size: 14px;
+}
+
 section.recommend {
   position: relative;
   width: 20%;
-  height: 1000px;
+  height: 1100px;
   background: #fffbf5;
   display: inline-block;
   text-align: left;
@@ -294,12 +329,12 @@ img.post {
   width: 100%;
 }
 
-.header .icon-loop, .header .name {
+section.posts .header .icon-cycle, section.posts .header .name {
   float: left;
   display: inline-block;
 }
 
-.origin {
+section.posts .origin {
   float: left;
   display: inline-block;
 }
@@ -312,7 +347,7 @@ article .footer {
   text-align: right;
 }
 
-.footer .icon-redo, .icon-star3, .icon-loop, .loop-count, .more {
+.footer .icon-forward, .icon-star, .icon-cycle, .cycle-count, .icon-ellipsis {
   float: left;
   display: inline-block;
 }
@@ -328,10 +363,13 @@ section.recommend .philippines_trends {
 
 section.recommend .title {
   color: #000000;
+  margin-bottom: 20px;
 }
+
 section.recommend section {
   margin-bottom: 20px;
 }
+
 section.recommend section img.avator {
   position: relative;
   float: left;
@@ -355,4 +393,12 @@ section.recommend section .follow {
 
 .who_to_follow .role {
   color: #c6c1b0;
+}
+
+.who_to_follow .follow_detail {
+  margin: 0 0 0 50px;
+}
+
+.who_to_follow {
+  font-size: 14px;
 }
