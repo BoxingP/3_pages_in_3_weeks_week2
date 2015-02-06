@@ -27,3 +27,7 @@ Once it's installed, open the page in browser, and click the `live reload` butto
 ```
 
 That's it, have fun with coding more interesting stuff.
+
+### Demo like
+
+[Click here](http://boxingp.github.io/3_pages_in_3_weeks_week2/)
